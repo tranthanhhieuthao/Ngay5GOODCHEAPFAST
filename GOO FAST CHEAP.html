@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<p>
+<input   id="Good" type="checkbox" onclick="ham3()" >GOOD
+</br>
+</br>
+    <input  id="Fast" type="checkbox" onclick="ham2()">FAST
+</br>
+</br>
+    <input  id="Cheap" type="checkbox" onclick="ham1()" >CHEAP
+</p>
+<script>
+    function ham1() {
+
+        let good=document.getElementById("Good");
+        let fast=document.getElementById("Fast");
+        let cheap=document.getElementById("Cheap");
+
+        if(  cheap.checked== true ) {
+            good.checked = true;
+            fast.checked =false;
+        }
+        else  {
+            good.checked = false;
+            fast.checked =true;
+        }
+
+    }
+    function ham2() {
+
+        let good=document.getElementById("Good");
+        let fast=document.getElementById("Fast");
+        let cheap=document.getElementById("Cheap");
+
+        if(  fast.checked== true ) {
+            good.checked = true;
+            cheap.checked =false;
+        }
+        else  {
+            good.checked = false;
+            cheap.checked =true;
+        }
+
+    }
+    function ham3() {
+
+        let good=document.getElementById("Good");
+        let fast=document.getElementById("Fast");
+        let cheap=document.getElementById("Cheap");
+
+        if(  good.checked== true ) {
+            cheap.checked = true;
+            fast.checked =false;
+        }
+        else  {
+            cheap.checked = false;
+            fast.checked =true;
+        }
+
+    }
+</script>
+</body>
+</html>
